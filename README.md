@@ -3,6 +3,7 @@
 
 - [1. Data structures](#1-data-structures)
     - [1.1. Arrays](#11-arrays)
+        - [Resizable array](#resizable-array)
     - [1.2. Linked Lists](#12-linked-lists)
     - [1.3. Stack / Queue](#13-stack--queue)
     - [1.4. Hash table (collison)](#14-hash-table-collison)
@@ -38,9 +39,28 @@
 
 ### 1.1. Arrays
 
+- insert(append) `O(1)`
+- insert(in the middle) `O(n)`
+- access(index) `O(1)`
+- search `O(n)`
+- continuous memory block, access nearby elements for efficiency
+- homogenous element size, so can calculate mem addr and access
+
+#### Resizable array
+
+- insert(amortized) `O(1)`
+
 ### 1.2. Linked Lists
 
+- insert(with ref to head/tail) `O(1)`
+- access(index) `O(n)`
+- search `O(n)`
+- singly or doubly linked, point to next node by mem addr
+- advantage: easy to insert in the middle when have ref to node, no shifting needed
+
 ### 1.3. Stack / Queue
+
+
 
 ### 1.4. Hash table (collison)
 
