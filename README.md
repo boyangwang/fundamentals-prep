@@ -5,7 +5,7 @@
     - [1.1. Arrays](#11-arrays)
         - [Resizable array](#resizable-array)
     - [1.2. Linked Lists](#12-linked-lists)
-    - [1.3. Stack / Queue](#13-stack--queue)
+    - [1.3. Stack / queue](#13-stack--queue)
     - [1.4. Hash table (collison)](#14-hash-table-collison)
     - [1.5. Heap](#15-heap)
     - [1.6. Priority Queue](#16-priority-queue)
@@ -58,11 +58,17 @@
 - singly or doubly linked, point to next node by mem addr
 - advantage: easy to insert in the middle when have ref to node, no shifting needed
 
-### 1.3. Stack / Queue
+### 1.3. Stack / queue
 
-
+- stack, push pop
+- queue, enqueue, dequeue
 
 ### 1.4. Hash table (collison)
+
+- chaining, put `O(1)`, get `O(1)` worst `O(n)`. You can have multiple times keys than tablesize
+- open addressing, with some probe sequence e.g. linear. Hard to have too high load factor
+- resize, need to move everything because hash % tablesize, `O(n)`
+- load factor: .75
 
 ### 1.5. Heap
 
