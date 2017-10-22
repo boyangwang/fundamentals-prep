@@ -10,7 +10,7 @@
     - [1.5. Heap / priority Queue](#15-heap--priority-queue)
     - [1.7. Binary search tree](#17-binary-search-tree)
         - [1.7.1. AVL, Red–black tree](#171-avl-redblack-tree)
-        - [1.7.2. preorder, inorder, postorder, BFS, DFS](#172-preorder-inorder-postorder-bfs-dfs)
+        - [1.7.2. preorder, inorder, postorder, BFS, DFS, invert](#172-preorder-inorder-postorder-bfs-dfs-invert)
     - [1.8. Graph](#18-graph)
         - [1.8.1. adjacency matrix / adjacency list](#181-adjacency-matrix--adjacency-list)
 - [2. Algorithms](#2-algorithms)
@@ -102,7 +102,18 @@
 
 #### 1.7.1. AVL, Red–black tree
 
-#### 1.7.2. preorder, inorder, postorder, BFS, DFS
+- avl tree
+    - https://en.wikipedia.org/wiki/AVL_tree
+    - insert delete search `O(logn)`
+    - keep balance factor, left-heavy, right-heavy, or balanced. When balance is broken, do rotation.
+    - insert case below as example. If parent factor is offset to 0, break from loop. If parent balanced, but I make it inbalance by 1, it's ok continue up the tree. If parent is inbalanced, and I cause it to be +2/-2, do rotation
+    - rotation, make the deep subtree to be root. So root's shorter subtree increase height since root is now at height 1. For the 2 subtrees of deep subtree of root, one remain to be a subtree and is now height-1 because deep sub is the root. The other will become sub of original root, staying same height, but it's ok, because others have h+1
+- red-black tree
+
+#### 1.7.2. preorder, inorder, postorder, BFS, DFS, invert
+
+- invert, recur: swapLeftRight(root); invert(root.left); invert(root.right);
+- invert, iterative: stack
 
 ### 1.8. Graph
 
