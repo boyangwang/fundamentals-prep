@@ -112,6 +112,8 @@
 
 #### 1.7.2. preorder, inorder, postorder, BFS, DFS, invert
 
+- traversals: 
+- bfs, dfs:
 - invert, recur: swapLeftRight(root); invert(root.left); invert(root.right);
 - invert, iterative: stack
 
