@@ -113,7 +113,34 @@
 #### 1.7.2. preorder, inorder, postorder, BFS, DFS, invert
 
 - traversals: 
-- bfs, dfs:
+- bfs, dfs
+    - just use a queue, enqueue root, dequeue root, process root, enqueue left, enqueue right, continue
+    ```
+    exports.bfs = function(root, processor) {
+        let queue = [], curLevel = 0, levelSize;
+        if (root) {
+            queue.push(root);
+        }
+        while (queue.length !== 0) {
+            levelSize = queue.length;
+            for (let i=0; i<levelSize; i++) {
+                let node = queue.shift();
+                processor(node);
+                if (node.left) {
+                    queue.push(node.left);
+                }
+                if (node.right) {
+                    queue.push(node.right);
+                }
+            }
+            curLevel += 1;
+        }
+    };
+    ```
+    - just use a stack, push root, pop root. Dependind on pre/in/post order, it can be:
+    ```
+     
+    ```
 - invert, recur: swapLeftRight(root); invert(root.left); invert(root.right);
 - invert, iterative: stack
 
