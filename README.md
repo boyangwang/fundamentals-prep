@@ -21,11 +21,12 @@
         - [2.2.3. quicksort mergesort](#223-quicksort-mergesort)
     - [2.3. Binary search](#23-binary-search)
     - [2.4. Dijkstra](#24-dijkstra)
-    - [2.5. Floyd–Warshall (All pair shortest path)](#25-floydwarshall-all-pair-shortest-path)
-    - [2.6. Backpack X](#26-backpack-x)
-    - [2.7. Recursion](#27-recursion)
-    - [2.8. DP](#28-dp)
-    - [2.9. Astar](#29-astar)
+    - [2.5. Minimum spanning tree](#25-minimum-spanning-tree)
+    - [2.6. Floyd–Warshall (All pair shortest path)](#26-floydwarshall-all-pair-shortest-path)
+    - [2.7. Backpack X](#27-backpack-x)
+    - [2.8. Recursion](#28-recursion)
+    - [2.9. DP](#29-dp)
+    - [2.10. Astar](#210-astar)
 - [3. OS](#3-os)
 - [4. System design](#4-system-design)
 - [5. Bits & bytes](#5-bits--bytes)
@@ -151,15 +152,17 @@ Define c_crit to be `log(b)(a)`
 
 ### 2.4. Dijkstra
 
-### 2.5. Floyd–Warshall (All pair shortest path)
+### 2.5. Minimum spanning tree
 
-### 2.6. Backpack X
+### 2.6. Floyd–Warshall (All pair shortest path)
 
-### 2.7. Recursion
+### 2.7. Backpack X
 
-### 2.8. DP
+### 2.8. Recursion
 
-### 2.9. Astar
+### 2.9. DP
+
+### 2.10. Astar
 
 ## 3. OS
 
